@@ -64,7 +64,7 @@ def presEnds(stem, num1):
                 print(stem + endings[i])
         elif num1 in (0, 1, 2, 3, 4, 5):
             print(stem + endings[num1])
-    
+            
 def imperfEnds(stem1, num1, stem):
     if conj in ("1", "2", "3"):
         endings = ["bam", "bas", "bat", "bamus", "batis", "bant"]
@@ -144,7 +144,7 @@ def presPassEnds(stem, num1):
                 print(stem1 + endings[i])
         elif num1 in (0, 1, 2, 3, 4, 5):
             print(stem1 + endings[num1])
-    
+
 def imperfPassEnds(stem1, num1, stem):
     if conj in ("1", "2", "3"):
         endings = ["bar", "baris", "batur", "bamur", "bamini", "bantur"]
@@ -362,7 +362,7 @@ def presPassSub(stem):
                 print(stem + endings[i])
         elif num1 in (0, 1, 2, 3, 4, 5):
             print(stem + endings[num1])
-    
+
 
 def perfSub(perfect1):
     endings = ["erim", "eris", "erit", "erimis", "eritis", "erint"]
@@ -379,15 +379,15 @@ def perfPassSub(part1):
             print(part1 + endings[i])
     elif num1 in (0, 1, 2, 3, 4, 5):
         print(part1 + endings[num1])
-    
+
 def printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, perfect):
 
     print(" ")
 
-    print("Principal parts: " + pres + ", " + infinitive + ", " + perfect + ", " + participle + " ") 
+    print("Principal parts: " + pres + ", " + infinitive + ", " + perfect + ", " + participle + " ")
 
     print(" ")
-    
+
     print("Present active indicative of " + infinitive + ": ")
     presEnds(stem, num1)
     print("Imperfect active indicative tense of " + infinitive + ": ")
@@ -417,7 +417,7 @@ def printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, 
     futPerfPass(part1)
 
     print(" ")
-    
+
     print("Present active subjunctive of " + infinitive + ": ")
     presSub(stem)
     print("Imperfect active subjunctive of " + infinitive + ": ")
@@ -426,7 +426,7 @@ def printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, 
     perfSub(perfect1)
     print("Pluperfect active subjunctive of " + infinitive + ": ")
     pluperfSubEnds(perfect, num1)
-    
+
     print("Present passive subjunctive of " + infinitive + ": ")
     presPassSub(stem)
     print("Imperfect passive subjunctive of " + infinitive + ": ")
@@ -437,7 +437,7 @@ def printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, 
     pluperfPassSub(part1)
 
     print(" ")
-    
+
     print("Present active participle of " + infinitive + ": ")
     presActPart(stem1)
     print("Perfect passive participle of " + infinitive + ": ")
@@ -446,7 +446,7 @@ def printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, 
     futActPart(part1)
     print("Future passive participle of " + infinitive + ": ")
     futurePassPart(stem1)
-    
+
     print(" ")
 
     print("Positive imperative -singular and plural- of " + infinitive + ": ")
@@ -468,6 +468,6 @@ def printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, 
     perfPassInfin(part1)
     print("Future passive infinitive of " + infinitive + ": ")
     futPassInfin(part1)
-    
+
 
 printVerb(stem, stem1, perfect1, infinitive, num1, part1, participle, pres, perfect)

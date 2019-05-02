@@ -6,6 +6,44 @@
 </head>
 <body>
   <h1>Latin Synopsis Generator</h1>
+  <p>This website will conjugate any regular latin verb. Just enter the principle parts below, decide whether you want the full verb or a synopsis (ex: 1st person singular), and have fun!
+
+    <form>
+      First principle part: (present)<br>
+      <input type = "text" name = pres><br>
+
+      Second principle part: (infinitive)<br>
+      <input type = "text" name = infinitive><br>
+
+      Third principle part: (perfect)<br>
+      <input type = "text" name = perfect><br>
+
+      Fourth principle part: (participle - m form)<br>
+      <input type = "text" name = participle><br>
+
+      Conjugation:
+      <select name="conj">
+        <option value = "1">1st (ex: necare)</option>
+        <option value = "2">2nd (ex: habEre)</option>
+        <option value = "3">3rd (ex: decidere)</option>
+        <option value = "5">3rd-io (ex: facere)</option>
+        <option value = "4">4th (ex: dormire)</option>
+      </select>
+
+      <br>
+
+      Person:
+      <select name="num1">
+        <option value = "7">none (all forms)</option>
+        <option value = "0">1st person singular</option>
+        <option value = "1">2nd person singular</option>
+        <option value = "2">3rd person singular</option>
+        <option value = "3">1st person plural</option>
+        <option value = "4">2nd person plural</option>
+        <option value = "5">3rd person plural</option>
+      </select>
+
+    </form>
 
   </body>
 </html>
